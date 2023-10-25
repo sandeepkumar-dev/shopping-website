@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-19670.jpg&fm=jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-size: 18px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #634e4e;
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+        text-align: center;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      li a:hover {
+        background-color: black;
+        color: white;
+      }
+
+      .logo-image img {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: -6px;
+      }
+      .navbar-content {
+        margin-top: 10px;
+      }
+      .navbar-right {
+        float: right;
+      }
+      .content {
+        width: 70%;
+      }
+      .img-home {
+        margin: 10%;
+        border-radius: 100%;
+      }
+
+      /**Shop section**/
+      .shop-section {
+        margin-top: 7%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .box {
+        border: 2px solid black;
+        background-color: whitesmoke;
+        height: 430px;
+        width: 23%;
+        padding: 20px 0px 15px;
+      }
+      .box-img {
+        height: 300px;
+        background-size: cover;
+      }
+      .box-content {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      .box-content a {
+        color: #007185;
+      }
+      .footer {
+        background-color: rgb(104, 228, 228);
+        text-align: center;
+        margin: 30px 0px 5px 0px;
+        padding: 10px 0px 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="Navbar">
+        <ul>
+          <li>
+            <a class="navbar-brand" href="/">
+              <div class="logo-image">
+                <img
+                  src="https://dcassetcdn.com/design_img/3619786/741968/741968_19904318_3619786_4a673531_image.png"
+                  class="img-fluid"
+                />
+              </div>
+            </a>
+          </li>
+          <div class="navbar-content">
+            <li><a href="#t1"> Home</a></li>
+            <li><a href="#t2"> About Us</a></li>
+            <li><a href="#t3"> Product</a></li>
+            <li><a href="#t3"> Service</a></li>
+          </div>
+          <div class="navbar-right">
+            <li>
+              <a href="#t3"> Cart</a> <i class="fa-solid fa-cart-shopping"></i>
+            </li>
+            <li>
+              <a href="#t3"> Contact Us</a> <i class="fa-solid fa-phone"></i>
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <div class="shop-section">
+        <div class="box1 box">
+          <div class="box-content">
+            <h2>Shop iPhone</h2>
+            <div
+              class="box-img"
+              style="
+                background-image: url('https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone15pro-digitalmat-gallery-1-202309_GEO_EMEA?wid=364&hei=333&fmt=png-alpha&.v=1693346851387');
+              "
+            ></div>
+            <p>
+              <a style="text-decoration: none" href="https://www.apple.com/in/"
+                >See more</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="box2 box">
+          <div class="box-content">
+            <h2>Shop Android Phone</h2>
+            <div
+              class="box-img"
+              style="
+                background-image: url('https://www.pngmart.com/files/Android-Phone-PNG-Photo.png');
+              "
+            ></div>
+            <p>
+              <a
+                style="text-decoration: none"
+                href="https://www.android.com/intl/en_in/phones-tablets/"
+                >See more</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="box3 box">
+          <div class="box-content">
+            <h2>Shop Windows Laptop</h2>
+            <div
+              class="box-img"
+              style="
+                background-image: url('https://cdn.xingosoftware.com/techfi/images/fetch/dpr_1,xx_700,xx_394,c_fit/https%3A%2F%2Ftechfi.nl%2Fassets%2Fupload%2Fimg%2Fpublic%2Foriginal%2Fmicrosoft-surface-laptop-5-5.jpg');
+              "
+            ></div>
+            <p>
+              <a
+                style="text-decoration: none"
+                href="https://www.microsoft.com/en-us/windows/windows-laptops?r=1"
+                >See more</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="box4 box">
+          <div class="box-content">
+            <h2>Shop macBook</h2>
+            <div
+              class="box-img"
+              style="
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlBsnNUIhpAk3JpZE6_KlQ2zIpfzrnQjGP_A&usqp=CAU');
+              "
+            ></div>
+            <p>
+              <a
+                style="text-decoration: none"
+                href="https://www.apple.com/in/mac/"
+                >See more</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <h1>Electronic Accessories</h1>
+      <div class="shop-section">
+        <div class="box1 box">
+          <div class="box-content">
+            <h2>Shop Bluetooth Heaphone</h2>
+            <div
+              class="box-img"
+              style="
+                background-image: url('https://www.ubuy.co.in/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY28uaW4vNjM1OTUwMDllZjIxYWU0YjI4NmMzYTU0LXNvbnktbWRyLXhiNjUwYnQtcmVkLWV4dHJhLWJhc3MuanBn.jpg');
+              "
+            ></div>
+            <p>
+              <a
+                style="text-decoration: none"
+                href="https://www.samsung.com/in/audio-sound/all-audio-sound/"
+                >See more</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="box2 box">
+          <div class="box-content">
+            <h2>Shop Bluetooth Neckband</h2>
+            <div
+              class="box-img"
+              style="
+                background-image: url('https://www.justjaldi.com/image/product/13880/LARGE/0/48999?t=1682146870');
+              "
+            ></div>
+            <p>
+              <a
+                style="text-decoration: none"
+                href="https://www.samsung.com/in/audio-sound/all-audio-sound/"
+                >See more</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="box3 box">
+          <div class="box-content">
+            <h2>Shop Bluetooth Airbuds</h2>
+            <div
+              class="box-img"
+              style="
+                background-image: url('https://alaqsa.com.pk/wp-content/uploads/2023/02/Buds2.jpg');
+              "
+            ></div>
+            <p>
+              <a
+                style="text-decoration: none"
+                href="https://www.samsung.com/in/audio-sound/all-audio-sound/"
+                >See more</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="box4 box">
+          <div class="box-content">
+            <h2>Shop Others Items</h2>
+            <div
+              class="box-img"
+              style="
+                background-image: url('https://i.pinimg.com/originals/84/e5/51/84e551a7b27bbb37a8db3a9ccd454571.png');
+              "
+            ></div>
+            <p>
+              <a
+                style="text-decoration: none"
+                href="https://www.flipkart.com/flipkart-elec-big-dussehra-sale-store?fm=neo%2Fmerchandising&iid=M_d9769ea8-3c47-4e54-aa5f-b8f9f5e2b168_1_FBB4FBSRQIC6_MC.8TVKUWT87M16&otracker=hp_rich_navigation_3_1.navigationCard.RICH_NAVIGATION_Electronics_8TVKUWT87M16&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_3_L0_view-all&cid=8TVKUWT87M16"
+                >See more</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Copyright 2023 Sandeep Kumar</p>
+      </div>
+    </div>
+  </body>
+</html>
